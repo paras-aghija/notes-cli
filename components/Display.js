@@ -6,7 +6,13 @@ const Table = require("ink-table").default;
 const Display = ({ important = false }) => {
 	const [notes, setNotes] = React.useState([]);
 	React.useEffect(() => {
-		getNotes().then((n) => setNotes(n));
+		getNotes().then((n) => {
+			if (important) {
+				setNotes(n.filter((note) => note.important));
+			} else {
+				setNotes(n);
+			}
+		});
 	}, []);
 	return <Table data={notes} />;
 };

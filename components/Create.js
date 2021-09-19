@@ -41,9 +41,11 @@ const Create = () => {
 					addNote(result)
 						.then(() => {
 							console.log("Note added successfully");
+							process.exit();
 						})
 						.catch((err) => {
 							console.log("some error occured");
+							process.exit();
 						});
 				}}
 			/>
