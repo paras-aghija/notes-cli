@@ -1,5 +1,4 @@
 const React = require("react");
-const { Box, Text, Newline } = require("ink");
 const { getNotes } = require("../services");
 const Table = require("ink-table").default;
 

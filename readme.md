@@ -13,15 +13,20 @@ $ npm install --global magneto-notes
 ## CLI
 
 ```
-$ magneto-notes --help
+Usage
+	  $ magneto-notes
 
-  Usage
-    $ magneto-notes
+	Options
+		--create
+		--display
+		--important
+		--remove
+		--help
 
-  Options
-    --name  Your name
-
-  Examples
-    $ magneto-notes --name=Jane
-    Hello, Jane
+	Examples
+	  $ magneto-notes --create => opens form to create notes
+	  $ magneto-notes --display => display all notes
+	  $ magneto-notes --remove => deleting a note
+	  $ magneto-notes --important => display important notes
+	  $ magneto-notes --help => opens help window
 ```

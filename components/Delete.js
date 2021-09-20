@@ -1,7 +1,6 @@
 const React = require("react");
 const SelectInput = require("ink-select-input").default;
 const { getNotes, deleteNote } = require("../services");
-const { Text, Box } = require("ink");
 
 const Delete = () => {
 	const [items, setItems] = React.useState([]);

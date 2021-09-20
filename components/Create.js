@@ -1,6 +1,5 @@
 const React = require("react");
-const { Box, Text, Newline } = require("ink");
-const TextInput = require("ink-text-input").default;
+const { Box } = require("ink");
 const importJsx = require("import-jsx");
 const { Form } = importJsx("ink-form");
 const { addNote } = require("../services");

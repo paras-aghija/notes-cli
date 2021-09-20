@@ -17,10 +17,14 @@ const cli = meow(
 		--display
 		--important
 		--remove
+		--help
 
 	Examples
-	  $ magneto-notes --name=Jane
-	  Hello, Jane
+	  $ magneto-notes --create => opens form to create notes
+	  $ magneto-notes --display => display all notes
+	  $ magneto-notes --remove => deleting a note
+	  $ magneto-notes --important => display important notes
+	  $ magneto-notes --help => opens help window
 `,
 	{
 		flags: {
@@ -28,6 +32,7 @@ const cli = meow(
 			display: { type: "boolean" },
 			important: { type: "boolean" },
 			delete: { type: "boolean" },
+			help: { type: "boolean" },
 		},
 	}
 );
