@@ -26,5 +26,6 @@ Examples
   $ magneto-notes --imp ortant => display important notes
   $ magneto-notes --help => opens help window
 ```
+[Notes Api Details](api.md)
 
 
