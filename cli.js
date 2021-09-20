@@ -16,6 +16,7 @@ const cli = meow(
 		--create
 		--display
 		--important
+		--remove
 
 	Examples
 	  $ magneto-notes --name=Jane
@@ -26,6 +27,7 @@ const cli = meow(
 			create: { type: "boolean" },
 			display: { type: "boolean" },
 			important: { type: "boolean" },
+			delete: { type: "boolean" },
 		},
 	}
 );

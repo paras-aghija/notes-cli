@@ -12,7 +12,18 @@ const addNote = (note) => {
 	return req.then((res) => res.data);
 };
 
+const deleteNote = (id) => {
+	const url = baseUrl + "/" + id;
+	const req = axios.delete(url);
+	return req
+		.then(() => {
+			operation: "success";
+		})
+		.catch((err) => err);
+};
+
 module.exports = {
 	getNotes,
 	addNote,
+	deleteNote,
 };
